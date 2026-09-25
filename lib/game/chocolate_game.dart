@@ -169,7 +169,7 @@ class Player extends PositionComponent {
     super.update(dt);
     final t=target;
     if(t!=null){
-      final d=t!-position;
+      final d = t - position;
       if(d.length>5){position+=d.normalized()*240*dt;anim++;}
       else target=null;
     }
